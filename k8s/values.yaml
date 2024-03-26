@@ -1,0 +1,6 @@
+tag: 3.4.0
+
+api:
+  name: api
+  image: zoriya/kyoo_back
+  replica: 1

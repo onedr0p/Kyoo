@@ -1,0 +1,6 @@
+apiVersion: v2
+name: kyoo
+description:  A portable and vast media library solution.
+type: application
+version: 0.1.0
+appVersion: 4.3.0

@@ -3,5 +3,6 @@
     packages = with pkgs; [
       kubectl
       minikube
+      kubernetes-helm
     ];
   }
