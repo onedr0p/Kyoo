@@ -1,7 +1,7 @@
 apiVersion: 1
 kind: Deployment
 metadata:
-  name: {{ .Values.api.name }}
+  name: "{{ .Values.api.name }}-deployment"
 spec:
   replica: {{ .Values.api.replica }}
   selector:
@@ -14,8 +14,9 @@ spec:
     spec:
       containers:
         - name: api
-          # image: {{ .Values.api.image }}:{{ .Values.tag }}
+          image: "{{ .Values.api.image }}:{{ .Values.tag }}"
           ports:
             - containerPort: 5000
+              name: api-port
       volumes:
         - name: thumbnails-vol

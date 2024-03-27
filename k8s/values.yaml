@@ -1,5 +1,8 @@
 tag: 3.4.0
 
+config:
+  default_permissions: ""
+
 api:
   name: api
   image: zoriya/kyoo_back
